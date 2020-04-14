@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">MyPlaces</string>
+    <string name="title_activity_maps" />
+    <string-array name="context_menu">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+</resources>

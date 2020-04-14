@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadMe">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="390dp"
+        android:layout_height="554dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:lines="@android:integer/config_mediumAnimTime"
+        android:text='Welcome to my places app!  Here is some instruction about how to use the app properly. 1. Open the app and you will be welcomed by a beautiful flash screen 2. click on add new place to add a new place 3. you can add as many places as you want 4. When you click "add new places" it will take you directly to the google map and you will see your current location with the red marker. To add a place long click on the map interface over the place you want to select. it will select the places with another red marker. Same way you can select as many places as you want. if you go back you will see the list of the palces you have selected. when click any of the places from the list it take you to the map interface again with the location 5. To remember the place later you save the place name or the coordinates. Just click save data button and write the place name on the text field and click save. If you type wrong click clear  button and type again. '
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
