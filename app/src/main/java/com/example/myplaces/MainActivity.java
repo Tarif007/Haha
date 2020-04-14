@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        ArrayList<String> latitude = new ArrayList<>();
-//        ArrayList<String> longitude = new ArrayList<>();
+
         button = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
 
@@ -49,17 +48,6 @@ public class MainActivity extends AppCompatActivity {
         places.clear();
         locations.clear();
 
-
-//        if (places.size() > 0 && latitude.size() >  0 && longitude.size() >0){
-//            if (places.size() == latitude.size() && places.size() == longitude.size()){
-//                for (int i = 0 ; i<latitude.size(); i++){
-//                    locations.add(new LatLng(Double.parseDouble(latitude.get(i) ), Double.parseDouble(longitude.get(i))));
-//                }
-//            }
-//        }
-//        else {
-
-      //}
 
         //creating the list view and passing the array adapter
         ListView listView = findViewById(R.id.listView);
