@@ -4,22 +4,18 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String LOGCAT = null;
-
     public DatabaseHelper(Context applicationcontext) {
         super(applicationcontext, "location.db", null, 1);
         Log.d(LOGCAT, "Created");
     }
-
     @Override
     public void onCreate(SQLiteDatabase database) {
         String query;
         query = "CREATE TABLE IF NOT EXISTS location ( _id INTEGER PRIMARY KEY, address TEXT)";
         database.execSQL(query);
     }
-
     public String InsertData(String address) {
         try {
             SQLiteDatabase database = this.getWritableDatabase();
@@ -30,9 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } catch (Exception ex) {
             return ex.getMessage().toString();
         }
-
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase database, int version_old,
                           int current_version) {
@@ -41,7 +35,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.execSQL(query);
         onCreate(database);
     }
-
     public Cursor getAddress() {
         try {
             String selectQuery = "SELECT * FROM location order by _id desc";
