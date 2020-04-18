@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.myplaces.DatabaseOperation.DataActivity;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openDataSave(){
-        Intent intent = new Intent(this, DataSave.class);
+        Intent intent = new Intent(this, DataActivity.class);
         startActivity(intent);
     }
 
